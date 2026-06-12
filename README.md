@@ -223,7 +223,7 @@ Example reconstruction output:
 
 ![Raw dot-grid bath frame and corresponding full-FSSS reconstruction](artifacts/readme/fsss_before_after_jun8_40wt_30hz_img0034.png)
 
-The left panel is a raw frame from `IMG_0034`; the right panel is the corresponding plane-detrended full-FSSS height reconstruction from the same video frame.
+This image shows a comparison between the captured image from the camera and the mathematically reconstructed surface
 
 ---
 
