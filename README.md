@@ -2,7 +2,6 @@
 
 ## Motivation
 
-
 The code in this repo was developed with the goal of providing a simple and open-source set of tools for analysing various properties of Faraday waves: parametric standing waves generated when shaking a container vertically.
 
 For an introduction to the vocabulary, theoretical background, as well as an intuitive and general explanation of how this repo was used, please read the research paper PDF, located in `artifacts/`.
@@ -21,17 +20,12 @@ Finally, I would also like to thank our TA and project advisor **Toms Ozoliņš*
 
 ---
 
-
 ## The workflow for using these tools
 
 1. Place raw videos, accelerometer CSV files, and metadata under `inputs/`.
-
 2. Select or verify the usable dot-grid ROI with the Streamlit ROI selector.
-
 3. Run one pipeline: frequency analysis, onset estimation, or full FSSS reconstruction.
-
 4. Read processed outputs from `outputs/`.
-
 5. Use `paper_data/` to reproduce the processed values shown in the paper's figures.
 
 ---
@@ -40,7 +34,7 @@ Finally, I would also like to thank our TA and project advisor **Toms Ozoliņš*
 
 Images are useful in this README because the project is visual by nature.
 
-![Raw Faraday-wave bath image through the dot grid](artifacts/readme/raw_bath_dot_grid_jun8_40wt_30hz.jpg)
+Raw Faraday-wave bath image through the dot grid
 
 The image above is a raw top-view frame of Faraday waves seen through the dot grid. The pipelines below turn videos like this into temporal spectra, onset-review data, and reconstructed surface-height maps.
 
@@ -72,10 +66,11 @@ scripts/                Command-line analysis tools.
 
 streamlit/              Interactive ROI and manual onset review tools.
 
-notebooks/              Jupyter notebooks for calculation of glycerol solution's properties as well as the numerical analysis, described in the introduction of the paper.
+notebooks/              Jupyter notebooks for calculation of glycerol solution's properties as well as
+
+the numerical analysis, described in the introduction of the paper.
 
 ```
-
 
 ---
 
@@ -135,7 +130,7 @@ outputs/frequency_analysis/runs/<project>/<drive_frequency>/<run_id>/spectrum/fr
 
 Example output:
 
-![Frequency sweep heatmap showing half-integer spectral bands](artifacts/readme/frequency_80wt_sweep_heatmap.jpg)
+Frequency sweep heatmap showing half-integer spectral bands
 
 The vertical bands show spectral power aligning with half-integer multiples of the measured driving frequency.
 
@@ -177,7 +172,7 @@ outputs/onset_estimation/runs/<project>/<drive_frequency>/<run_id>/accelerometer
 
 Example onset-review output:
 
-![Log-growth onset review example](artifacts/readme/onset_log_growth_example.jpg)
+Log-growth onset review example
 
 The onset workflow generates review data where the rising subharmonic video response can be compared with the accelerometer-derived forcing envelope.
 
@@ -221,7 +216,7 @@ outputs/full_fsss/batch/<batch_id>/wavenumber/wavenumber_summary.csv
 
 Example reconstruction output:
 
-![Raw dot-grid bath frame and corresponding full-FSSS reconstruction](artifacts/readme/fsss_before_after_jun8_40wt_30hz_img0034.png)
+Raw dot-grid bath frame and corresponding full-FSSS reconstruction
 
 The left panel is a raw frame from `IMG_0034`; the right panel is the corresponding plane-detrended full-FSSS height reconstruction from the same video frame.
 
@@ -256,7 +251,7 @@ Generated figures are written to `outputs/publication_figures/`.
 
 Example publication-style onset summary:
 
-![Onset acceleration frequency-dependence grid](artifacts/readme/onset_frequency_dependence_grid.jpg)
+Onset acceleration frequency-dependence grid
 
 ---
 
