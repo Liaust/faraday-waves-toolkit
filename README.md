@@ -5,7 +5,7 @@
 
 The code in this repo was developed with the goal of providing a simple and open-source set of tools for analysing various properties of Faraday waves: parametric standing waves generated when shaking a container vertically.
 
-For an introduction to the vocabulary, theoretical background, as well as an intuitive and general explanation of how this repo was used, please read the research paper PDF, located in `artifacts/`.
+For an introduction to the vocabulary, theoretical background, as well as an intuitive and general explanation of how this repo was used, please read the research paper PDF, located in `artifacts/`. In this folder you can also find the raw data and figures that were used in the report itself.
 
 #### Acknowledgements
 
