@@ -1,14 +1,8 @@
 #!/usr/bin/env python3
-"""Estimate camera intrinsics from a checkerboard calibration video.
 
-This script is the standalone version of the checkerboard-calibration notebook
-used in the lab workflow. It scans frames from a video, detects checkerboard
-inner corners, runs OpenCV camera calibration, and writes camera_intrinsics.json.
-"""
-
-# this is the checkerboard camera calibration script
-# idea is simple: checkerboard corners have known real positions, opencv finds
-# where they appear in pixels, then calibrateCamera solves for K and distortion
+'''
+this file is used to calibrate the camera using a checkerboard
+'''
 
 from __future__ import annotations
 
@@ -25,7 +19,7 @@ import numpy as np
 
 try:
     import yaml
-except ImportError:  # pragma: no cover - dependency error path
+except ImportError:  #yaml sometimes does not import
     yaml = None
 
 
@@ -43,7 +37,7 @@ def load_yaml(path: Path) -> dict[str, Any]:
 
 
 def resolve_path(path_value: str | Path, root: Path) -> Path:
-    # paths in metadata are usually repo-relative, absolute paths stay absolute
+    # expand the path if it is relative
     path = Path(path_value).expanduser()
     if path.is_absolute():
         return path
@@ -91,11 +85,6 @@ def find_checkerboard(
     gray: np.ndarray,
     pattern_size: tuple[int, int],
 ) -> tuple[bool, np.ndarray | None, str]:
-    """Detect checkerboard corners in OpenCV's expected order.
-
-    The robust SB detector is tried first when available. If it fails, the
-    classic detector is used, followed by subpixel corner refinement.
-    """
     # try the newer SB detector first, it tends to handle blur/perspective better
     if hasattr(cv2, "findChessboardCornersSB"):
         flags_sb = 0
@@ -370,7 +359,6 @@ def calibrate(config: dict[str, Any], accepted_frames: list[dict[str, Any]], inf
     flags = 0
     if bool(config["use_rational_model"]) and hasattr(cv2, "CALIB_RATIONAL_MODEL"):
         # rational model adds more radial distortion terms
-        # useful only if the simpler model is not enough
         flags |= cv2.CALIB_RATIONAL_MODEL
 
     # core solve
