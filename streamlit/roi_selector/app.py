@@ -1,8 +1,9 @@
 from __future__ import annotations
 
-# this is the manual roi selector
-# the ui itself mostly just edits metadata and calls roi_tools.py for the actual image stuff
-# frequency and full fsss use slightly different roi logic so both modes live here
+'''
+the point of this file is to select the ROI for the dot tracking pipeline
+with a simple stremalit app that loads the flat liquid reference from metadata
+'''
 
 import math
 
@@ -28,7 +29,7 @@ from roi_tools import (
     save_roi_to_metadata,
 )
 
-# basic streamlit page setup
+
 st.set_page_config(page_title="Faraday ROI Selector", layout="wide")
 
 # load the reference images but cache them
@@ -135,7 +136,7 @@ def frequency_metric_row(summary: dict) -> None:
     cols[4].metric("Duplicates removed", summary.get("indexing_duplicate_removed_count", 0))
 
 # main app flow
-# load metadata -> choose mode -> edit roi -> preview/evaluate -> save to yaml
+
 def main() -> None:
     # metadata has the current roi defaults
     metadata = load_yaml()

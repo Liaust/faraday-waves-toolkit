@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-# backend helpers for the roi selector
-# this repeats a few pieces of the tracking logic so we can test an roi quickly
-# before running the full pipelines
+'''
+Just a set of tools for the roi selector app
+'''
 
 import json
 import math
@@ -18,8 +18,7 @@ import yaml
 from PIL import Image, ImageDraw
 from scipy.spatial import cKDTree
 
-# repo root and dot tracking folder
-# the streamlit app is not installed as a package, so we add scripts manually
+# set the global paths
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DOT_TRACKING_DIR = PROJECT_ROOT / "scripts" / "dot_tracking"
 
@@ -28,7 +27,7 @@ if str(PROJECT_ROOT) not in sys.path:
 if str(DOT_TRACKING_DIR) not in sys.path:
     sys.path.insert(0, str(DOT_TRACKING_DIR))
 
-# optional metadata override, otherwise use the normal public input file
+# optional metadata override
 _metadata_env = os.environ.get("FARADAY_CALIBRATION_METADATA_PATH") or os.environ.get("FSSS_METADATA_PATH")
 METADATA_PATH = (
     Path(_metadata_env).expanduser()
@@ -40,7 +39,7 @@ if not METADATA_PATH.is_absolute():
 
 # imported after sys.path setup
 # build_flat_lattice is the same core helper used by frequency tracking
-from dot_lattice import (  # noqa: E402
+from dot_lattice import ( 
     Roi as FrequencyRoi,
     RotatedRoi as FrequencyRotatedRoi,
     build_flat_lattice,
@@ -246,7 +245,7 @@ def first_reference_frame(video_path: Path) -> np.ndarray:
     return cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
 def undistort_gray(gray: np.ndarray, metadata: dict) -> np.ndarray:
-    # optionally undistort the image if metadata asks for it
+    # optionally undistort the image if metadata defines it
     # frequency sometimes skips this, fsss may require it
     image_processing = metadata.get("image_processing", {})
     camera = metadata.get("camera", {}) or {}
@@ -403,7 +402,7 @@ def detect_dark_dots(
     border_margin_px: int = 3,
 ) -> tuple[pd.DataFrame, np.ndarray, np.ndarray]:
     # dark dot detection
-    # blur a little, estimate smooth background, subtract image from background
+    # based on DoG and Otsu
     # then normalize so dark dots become bright blobs
     img = gray.copy()
     if blur_ksize and blur_ksize > 1:
@@ -483,7 +482,7 @@ def detect_dots_in_roi(dry_img: np.ndarray, roi: Roi) -> pd.DataFrame:
 
 def refine_peak_quadratic(corr: np.ndarray, x: int, y: int) -> tuple[float, float]:
     # subpixel correction around the integer template match peak
-    # using a little quadratic fit in x and y
+    # using a quadratic fit in x and y
     height, width = corr.shape
     dx = 0.0
     dy = 0.0
