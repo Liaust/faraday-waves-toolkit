@@ -1,0 +1,15 @@
+run_id: example_run
+kind: stable
+video_path: inputs/data/example_run/video-last-5.mov
+accelerometer_csv: inputs/data/example_run/raw_acceleration.csv
+
+drive:
+  nominal_frequency_hz: null
+  measured_frequency_hz: null
+
+fluid:
+  glycerol_wt_percent: null
+  temperature_C: 20.0
+
+notes: ""
+

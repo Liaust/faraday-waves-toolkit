@@ -1,0 +1,3 @@
+fit,theory_column,slope_a,intercept_b_g,r_squared,rmse_g,n_points
+manual_gamma_z_vs_continuous_min_k_theory_affine,manual_continuous_min_theory_gamma_g,0.9637870234625554,0.20025464305049545,0.8321132434890197,0.11758284838305409,156
+manual_gamma_z_vs_continuous_min_k_theory_zero_intercept,manual_continuous_min_theory_gamma_g,1.3310880210069465,0.0,0.5678717850451052,0.18864359704712402,156

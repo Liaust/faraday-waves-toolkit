@@ -1,0 +1,10 @@
+numpy
+pandas
+scipy
+matplotlib
+opencv-python
+PyYAML
+streamlit
+tqdm
+plotly
+Pillow

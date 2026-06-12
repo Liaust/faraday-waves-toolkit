@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+
+# raw inputs
+inputs/data/*
+!inputs/data/.gitkeep
+
+# Large data
+*.mov
+*.mp4
+*.avi
+*.mkv
+*.npz
+*.npy
+*.h5
+*.hdf5
+
+# System
+.DS_Store
+

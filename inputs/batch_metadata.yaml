@@ -1,0 +1,47 @@
+
+
+
+project:
+  name: example_faraday_experiment
+  output_dir: outputs/example_faraday_experiment
+
+calibration:
+  calibration_id: example_calibration
+  metadata_path: inputs/calibration_metadata.yaml
+  full_fsss_output_dir: outputs/full_fsss/calibration/example_calibration
+  flat_reference_video: inputs/data/flat_reference.mov
+  accelerometer_csv: inputs/data/example_runup/raw_acceleration_calibration.csv
+
+fluid:
+  glycerol_wt_percent: null
+  temperature_C: 20.0
+  total_mass_g: null
+  density_kg_m3: null
+  dynamic_viscosity_Pa_s: null
+  kinematic_viscosity_m2_s: null
+  surface_tension_N_m: null
+
+geometry:
+  dot_spacing_mm: 1.0
+  bath_height_mm: null
+  roi_px: null
+  rotated_roi_px: null
+
+runs:
+  - run_id: example_stable_run
+    kind: stable
+    video_path: inputs/data/example_stable_run/video-last-5.mov
+    accelerometer_csv: inputs/data/example_stable_run/raw_acceleration.csv
+    nominal_drive_hz: null
+    pipelines:
+      - frequency
+      - full-fsss
+
+  - run_id: example_runup
+    kind: runup
+    video_path: inputs/data/example_runup/video-runup.mov
+    accelerometer_csv: inputs/data/example_runup/raw_acceleration.csv
+    accelerometer_calibration_csv: inputs/data/example_runup/raw_acceleration_calibration.csv
+    nominal_drive_hz: null
+    pipelines:
+      - onset

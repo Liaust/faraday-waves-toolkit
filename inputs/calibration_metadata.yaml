@@ -1,0 +1,82 @@
+calibration_id: example_calibration
+
+videos:
+  flat_reference: inputs/data/flat_reference.mov
+  dry_grid: null
+  empty_container: null
+
+dot_grid:
+  dry_video_path: null
+  empty_bath_video_path: null
+  flat_liquid_video_path: inputs/data/flat_reference.mov
+  dot_spacing_mm_actual: 1.0
+  dot_diameter_mm_actual: null
+  dry_reference_state: dot_grid_reference_as_recorded
+  dry_reference_note: null
+  flat_liquid_reference_note: null
+
+camera:
+  intrinsics_path: outputs/camera_calibration/example_calibration/camera_intrinsics.json
+  camera_matrix: null
+  distortion_coefficients: null
+  skip_lens_undistortion: false
+
+checkerboard:
+  video_path: inputs/data/checkerboard_calibration.mov
+  square_size_mm_actual: 10.0
+  inner_corners_x: 9
+  inner_corners_y: 6
+  max_frames_to_scan: 300
+  max_accepted_frames: 80
+  use_rational_distortion_model: false
+
+fluid:
+  glycerol_wt_percent: null
+  temperature_C: 20.0
+  total_mass_g: null
+  density_kg_m3: null
+  bath_height_mm: null
+  liquid_depth_mm: null
+  refractive_index: null
+
+container:
+  shape: rectangular
+  inner_length_mm: null
+  inner_width_mm: null
+  footprint_area_mm2: null
+  bottom_material: null
+  bottom_thickness_mm: null
+  bottom_refractive_index: null
+  dot_to_outer_bottom_gap_mm: 0.0
+
+optical_stack:
+  dry_reference_state: dot_grid_reference_as_recorded
+  dot_to_first_layer_gap_mm: 0.0
+  layers_dot_to_liquid: []
+
+raytrace:
+  air_refractive_index: 1.0
+  include_bath_bottom: true
+  include_lens_distortion: true
+
+image_processing:
+  skip_lens_undistortion_for_roi_and_frequency: false
+  skip_lens_undistortion_for_full_fsss: false
+
+geometry:
+  dot_spacing_mm: 1.0
+  roi_px: null
+  rotated_roi_px: null
+  image_width_px: null
+  image_height_px: null
+  camera_distance_mm: null
+
+geometry_initial_estimates:
+  usable_roi_px: null
+  usable_roi_rotated_px: null
+  camera_height_above_dot_plane_mm: null
+
+tracking:
+  max_reference_frames: 80
+  reference_stride: 10
+  min_match_score: 0.35

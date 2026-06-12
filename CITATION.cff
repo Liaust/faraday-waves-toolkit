@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata in this file."
+type: software
+title: "faraday-waves-toolkit"
+abstract: "A Python toolkit for analysing Faraday-wave experiments using dot-grid tracking, frequency analysis, onset acceleration review, and full free-surface synthetic schlieren reconstruction."
+authors:
+  - family-names: Miranda
+    given-names: Leonardo
+  - family-names: Bakker
+    given-names: Sam
+  - family-names: Bron
+    given-names: Tsjeard
+  - family-names: Marcu
+    given-names: Mihnea
+date-released: "2026-06-11"
+license: MIT
+keywords:
+  - Faraday waves
+  - fluid dynamics
+  - synthetic schlieren
+  - frequency analysis
+  - onset acceleration
+  - wave number

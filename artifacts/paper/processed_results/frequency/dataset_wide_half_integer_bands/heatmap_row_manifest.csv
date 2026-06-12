@@ -1,0 +1,49 @@
+concentration_wt,concentration_label,nominal_drive_frequency_hz,measured_drive_frequency_hz,drive_frequency_source,image_id,selection_label,metadata_amplitude_label,gamma,run_id,n_spectra
+20.0,20 wt%,15,15.307131439599152,accelerometer,IMG_0050,higher forcing,chaotic,0.546,may27_20wt_15Hz_chaotic_IMG_0050,1
+20.0,20 wt%,17,17.405419685864455,accelerometer,IMG_0054,higher forcing,chaotic,0.5967,may27_20wt_17Hz_chaotic_IMG_0054,1
+20.0,20 wt%,20,20.497399668186233,accelerometer,IMG_0060,higher forcing,chaotic,0.5440499999999999,may27_20wt_20Hz_chaotic_IMG_0060,1
+20.0,20 wt%,22,22.54634419657304,accelerometer,IMG_0064,higher forcing,chaotic,0.5694,may27_20wt_22Hz_chaotic_IMG_0064,1
+20.0,20 wt%,25,25.727072257261067,accelerometer,IMG_0069,higher forcing,chaotic,0.58695,may27_20wt_25Hz_chaotic_IMG_0069,1
+20.0,20 wt%,27,27.65899352696548,accelerometer,IMG_0005,higher forcing,chaotic,0.57135,may27_20wt_27Hz_chaotic_IMG_0005,1
+20.0,20 wt%,30,30.766104347123893,accelerometer,IMG_0010,higher forcing,chaotic,0.72735,may27_20wt_30Hz_chaotic_IMG_0010,1
+30.0,30 wt%,15,15.136208570407906,accelerometer,IMG_0007,chaotic,chaotic,0.2983499999999999,may29_30wt_15Hz_chaotic_IMG_0007,1
+30.0,30 wt%,17,17.114032548640473,accelerometer,IMG_0012,chaotic,chaotic,0.2769,may29_30wt_17Hz_chaotic_IMG_0012,1
+30.0,30 wt%,20,20.28798036253849,accelerometer,IMG_0017,chaotic,chaotic,0.41145,may29_30wt_20Hz_chaotic_IMG_0017,1
+30.0,30 wt%,22,22.225359533618303,accelerometer,IMG_0022,chaotic,chaotic,0.507,may29_30wt_22Hz_chaotic_IMG_0022,1
+30.0,30 wt%,25,25.33426242938873,accelerometer,IMG_0027,chaotic,chaotic,0.39585,may29_30wt_25Hz_chaotic_IMG_0027,1
+30.0,30 wt%,27,27.309625197050455,accelerometer,IMG_0034,chaotic,chaotic,0.4757999999999999,may29_30wt_27Hz_chaotic_IMG_0034,1
+30.0,30 wt%,30,30.35930695421271,accelerometer,IMG_0039,chaotic,chaotic,0.5479499999999999,may29_30wt_30Hz_chaotic_IMG_0039,1
+40.0,40 wt%,15,15.655466060013588,accelerometer,IMG_0125,chaotic,chaotic,0.38805,may26_15Hz_chaotic_IMG_0125,1
+40.0,40 wt%,18,18.817173744105993,accelerometer,IMG_0124,chaotic_v2,chaotic_v2,0.3354,may26_18Hz_chaotic_v2_IMG_0124,1
+40.0,40 wt%,20,21.056715012041916,accelerometer,IMG_0131,chaotic,chaotic,0.507,may26_20Hz_chaotic_IMG_0131,1
+40.0,40 wt%,22,23.155101056170125,accelerometer,IMG_0138,chaotic,chaotic,0.46995,may26_22Hz_chaotic_IMG_0138,1
+40.0,40 wt%,25,26.30331123260911,accelerometer,IMG_0141,chaotic,chaotic,0.71955,may26_25Hz_chaotic_IMG_0141,1
+40.0,40 wt%,27,28.508046378527673,accelerometer,IMG_0146,chaotic,chaotic,0.6123000000000001,may26_27Hz_chaotic_IMG_0146,1
+40.0,40 wt%,30,31.517684514949853,accelerometer,IMG_0152,chaotic,chaotic,0.79365,may26_30Hz_chaotic_IMG_0152,1
+50.0,50 wt%,15,14.950000000000012,optical drive peak,IMG_0007,stable,stable,,jun1_50wt_15Hz_stable_IMG_0007,1
+50.0,50 wt%,17,17.000000000000014,optical drive peak,IMG_0012,stable,stable,,jun1_50wt_17Hz_stable_IMG_0012,1
+50.0,50 wt%,20,20.100000000000016,optical drive peak,IMG_0016,stable,stable,,jun1_50wt_20Hz_stable_IMG_0016,1
+50.0,50 wt%,22,22.000000000000018,optical drive peak,IMG_0020,stable,stable,,jun1_50wt_22Hz_stable_IMG_0020,1
+50.0,50 wt%,25,25.00000000000002,optical drive peak,IMG_0021,stable,stable,,jun1_50wt_25Hz_stable_IMG_0021,1
+50.0,50 wt%,27,27.000000000000025,optical drive peak,IMG_0025,stable,stable,,jun1_50wt_27Hz_stable_IMG_0025,1
+50.0,50 wt%,30,30.050000000000026,optical drive peak,IMG_0032,stable,stable,,jun1_50wt_30Hz_stable_IMG_0032,1
+60.0,60 wt%,15,14.950000000000012,optical drive peak,IMG_0040,stable,stable,,jun1_60wt_15Hz_stable_IMG_0040,1
+60.0,60 wt%,17,17.000000000000014,optical drive peak,IMG_0045,stable,stable,,jun1_60wt_17Hz_stable_IMG_0045,1
+60.0,60 wt%,20,20.100000000000016,optical drive peak,IMG_0049,stable,stable,,jun1_60wt_20Hz_stable_IMG_0049,1
+60.0,60 wt%,22,21.95000000000002,optical drive peak,IMG_0053,stable,stable,,jun1_60wt_22Hz_stable_IMG_0053,1
+60.0,60 wt%,25,25.00000000000002,optical drive peak,IMG_0057,stable,stable,,jun1_60wt_25Hz_stable_IMG_0057,1
+60.0,60 wt%,27,27.050000000000026,optical drive peak,IMG_0004,stable,stable,,jun1_60wt_27Hz_stable_IMG_0004,1
+60.0,60 wt%,30,30.100000000000023,optical drive peak,IMG_0008,stable,stable,,jun1_60wt_30Hz_stable_IMG_0008,1
+70.0,70 wt%,15,15.056593774193608,accelerometer,IMG_0005,chaotic,chaotic,0.5382,may29_70wt_15Hz_chaotic_IMG_0005,1
+70.0,70 wt%,17,17.181516472272136,accelerometer,IMG_0010,chaotic,chaotic,0.6610499999999999,may29_70wt_17Hz_chaotic_IMG_0010,1
+70.0,70 wt%,20,20.39297730663341,accelerometer,IMG_0012,chaotic,chaotic,0.50895,may29_70wt_20Hz_chaotic_IMG_0012,1
+70.0,70 wt%,22,22.294472117543982,accelerometer,IMG_0017,chaotic,chaotic,0.67275,may29_70wt_22Hz_chaotic_IMG_0017,1
+70.0,70 wt%,25,25.207951703727066,accelerometer,IMG_0025,chaotic,chaotic,0.7761,may29_70wt_25Hz_chaotic_IMG_0025,1
+70.0,70 wt%,27,27.262974891255787,accelerometer,IMG_0028,chaotic,chaotic,0.9243,may29_70wt_27Hz_chaotic_IMG_0028,1
+70.0,70 wt%,30,30.41976477861851,accelerometer,IMG_0006,chaotic,chaotic,1.09005,may29_70wt_30Hz_chaotic_IMG_0006,1
+80.0,80 wt%,15,15.250000000000012,optical drive peak,IMG_0011,lower forcing,pre_chaotic,,may27_80wt_15Hz_pre_chaotic_IMG_0011,1
+80.0,80 wt%,17,17.45724788482412,accelerometer,IMG_0020,lower forcing,pre_chaotic,0.6883499999999999,may27_80wt_17Hz_pre_chaotic_IMG_0020,1
+80.0,80 wt%,20,20.48627242568205,accelerometer,IMG_0025,lower forcing,pre_chaotic,1.01595,may27_80wt_20Hz_pre_chaotic_IMG_0025,1
+80.0,80 wt%,22,22.66679650733819,accelerometer,IMG_0030,lower forcing,pre_chaotic,1.0062,may27_80wt_22Hz_pre_chaotic_IMG_0030,1
+80.0,80 wt%,25,25.784103599061265,accelerometer,IMG_0036,lower forcing,pre_chaotic,1.32015,may27_80wt_25Hz_pre_chaotic_IMG_0036,1
+80.0,80 wt%,27,27.7732134193326,accelerometer,IMG_0042,lower forcing,pre_chaotic,1.4976,may27_80wt_27Hz_pre_chaotic_IMG_0042,1
